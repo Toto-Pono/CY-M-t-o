@@ -35,7 +35,6 @@ t_station recup_data_ligne(FILE* fichier, char*  caractereActuel)
 
         case 2:  
           /*date*/
-          /*Merci coco*/
           /*Bon des fois il lit la bonne valeur - 1 je ne comprend pas pk*/
           strptime(chaine, "%Y-%m-%dT%H:%M:%S+01:00", &t);
           new_station.date = mktime(&t);
@@ -43,7 +42,6 @@ t_station recup_data_ligne(FILE* fichier, char*  caractereActuel)
 
         case 3:
           /*pression mer*/
-          /*useless*/
           //new_station.pres_max = atof(chaine);
           break;
 
@@ -404,7 +402,7 @@ int main(int argc, char** argv)
       exit(ERREUR_SAISIE);
   }
 
-  fichier = fopen(nomF, "r");   //ouvre le document "test.csv" en mode lecture
+  fichier = fopen(nomF, "r");   //ouvre le document en entrée en mode lecture
   
   /*on skip la 1ère ligne*/
   while((caractereActuel!=EOF)&&(caractereActuel!='\n')){

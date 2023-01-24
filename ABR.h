@@ -1,27 +1,3 @@
-/* **************************************************************************** */
-/*                                                                              */
-/*                                                       ::::::::  :::   :::    */
-/*   CY-Meteo                                           :+:    :+: :+:   :+:    */
-/*                                                    +:+         +:+ +:+       */
-/*   By: Durandnico <durandnico@cy-tech.fr>          +#+          +#++:         */
-/*                                                 +#+           +#+            */
-/*   Created: 17/01/2023 17:31:54 by Durandnico   #+#    #+#    #+#             */
-/*   Updated: None                                ########     ###              */
-/*                                                                              */
-/* **************************************************************************** */
-
-
-/*! 
- *  \file ABR.h
- *  \author DURAND Nicolas Erich Pierre <nicolas.durand@cy-tech.fr>
- *  \version 1.0
- *  \date Tue 17 January 2023 - 17:31:54
- *
- *  \brief Headers of ABR.c
- *
- *
- */
-
 #ifndef __ABR_H
 #define __ABR_H
 #define _XOPEN_SOURCE //nécessaire pour strptime car ??? personne ne sait 
@@ -37,15 +13,6 @@
 
 #define ERREUR_SAISIE -1
 #define HELP 0
-
-/*!
- *  \struct t_station
- *  \author DURAND Nicolas Erich Pierre <nicolas.durand@cy-tech.fr>
- *  \version 1.0
- *  \date Wed 18 January 2023 - 00:13:44
- *  \brief 
- *  \param 
- */
 
 typedef struct  s_station
 {
